@@ -1,101 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-
-    
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Smooth Fade-Up Responsive Navigation</title>
+      <link rel="stylesheet" href="mystyle.css">
+      <script src="main.js"></script>
+      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
 </head>
-
 <body>
+      <nav>
+            <span id="brand">
+                  <a href="index.html">สงครามโลกครั้งที่ 2</a>
+            </span>
 
- <!-- header -->
-        <div class="header" style="padding-top:  0;">
-                <h2>สงครามโลกครั้งที่2</h2>
-                <h3>World War II</h3>
-                <p>เว็บไซต์ให้ความรู้เกี่ยวกับสงครามโลกครั้งที่2</p>
+            <ul class = "menu" id="menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <div id="toggle">
+                  <div class="span" id="one"></div>
+                  <div class="span" id="two"></div>
+                  <div class="span" id="three"></div>
             </div>
-<!-- Navbarr -->
-   <div class="topnav" id="topnav">
-                <a style="padding-right: 40px;padding-left: 40px;" href="#home">Home</a>    
-                <a style="padding-right: 40px;padding-left: 40px;" href="#news">News</a>    
-                <a style="padding-right: 40px;padding-left: 40px;" href="#contact">Contact</a>  
-                <a style="padding-right: 40px;padding-left: 40px;" href="#about">About</a> 
-                <p id="digitalclock" style="float:right; color:white; padding-right: 5px;" ></p>
-</div>
+      </nav>
+      <div id="resize">
+            <ul id="menu">
+                  <li><a href="#" class="cool-link">Home</a></li>
+                  <li><a href="#" class="cool-link">About</a></li>
+                  <li><a href="#" class="cool-link">Contact</a></li>
+                  <li><a href="#" class="cool-link">FAQ</a></li>
+            </ul>
+      </div>
 
- <!-- TimeLine -->
-<!-- <hr class="new1" style="padding:3px"> -->
-<hr>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-<h1>TimeLine</h1>
-    <div class="timeline">
-        <div class="container left">
-          <div class="content">
-            <h2>ประวัติ</h2>
-            <p> กรณีของสงครามโลกครั้งที่ 2 อาจนับได้ว่าเป็นสงครามครั้งรุนแรงและยิ่งใหญ่ที่สุดเท่าที่เคยอุบัติขึ้น 
-                เพราะสงครามครั้งนี้ได้ขยายสมรภูมิรบออกไปทั่วโลกในระยะเวลาอันรวดเร็ว โดยครอบคลุมอาณาบริเวณทั้งในยุโรป 
-                แอฟริกาเหนือ เอเชียตะวันออก และมหาสมุทรแปซิฟิก เป็นความขัดแย้งในวงกว้าง ครอบคลุมทุกทวีปและประเทศส่วนใหญ่ในโลก 
-                เริ่มต้นในปี พ.ศ. 2482 (ค.ศ. 1939) และดำเนินไปจนกระทั่งสิ้นสุดในปี พ.ศ. 2488 (ค.ศ. 1945) 
-                ได้ชื่อว่าเป็นสงครามที่มีขนาดใหญ่และทำให้เกิดความสูญเสียครั้งใหญ่ที่สุดในประวัติศาสตร์โลก </p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>ช่วงเวลา</h2>
-            <p>การรบเกิดขึ้นเมื่อ 1 กันยายน พ.ศ. 2482(ค.ศ. 1939) - 2 กันยายน พ.ศ. 2488 (ค.ศ. 1945)</p>
-
-            <p> *วันที่ 1 กันยายน พ.ศ. 2482 (ค.ศ. 1939) ที่เยอรมันรุกรานโปแลนด์ <br>
-                *วันที่ 7 กรกฎาคม พ.ศ. 2480 (ค.ศ. 1937) ที่ญี่ปุ่นรุกรานจีน (วันเริ่มต้น   สงครามจีน-ญี่ปุ่นครั้งที่ 2) <br>
-                *ปี พ.ศ. 2474 (ค.ศ. 1931) ที่ญี่ปุ่นรุกแมนจูเรีย.</p>
-            <h2>วันสิ้นสุดสงคราม</h2>
-            <p>
-                *สงครามในยุโรปสิ้นสุดเมื่อเยอรมนียอมจำนนในวันที่ 8 พฤษภาคม พ.ศ. 2488 (ค.ศ. 1945)<br>
-                *ในเอเชียยังดำเนินต่อไปจนกระทั่งญี่ปุ่นยอมจำนนในวันที่ 15 สิงหาคม ปีเดียวกัน
-            </p>
-          </div>
-        </div>
-        <div class="container left">
             <div class="content">
-                <h2>สถานที่ทำการรบ</h2>
-                <p>*ยุโรป(ยุโรปตะวันตกและตะวันออก)<br>
-                   *เอเชียอาคเนย์(เอเชียตะวันออกเฉียงใต้)<br>
-                   *ตะวันออกกลาง<br>
-                   *ทะเลเมดิเตอร์เรเนียน และแอฟริกา ตั้งแต่มหาสมุทรแอตแลนติก<br>
-                   *มหาสมุทรแปซิฟิก ภูมิภาคตะวันออกกลาง</p>
-                <h2>ผลการรบ</h2>
-                <p>
-                    ฝ่ายสัมพันธมิตรเป็นฝ่ายชนะสงคราม
-                </p>
+                  <h1><strong>World War II</strong></h1>
             </div>
-        </div>
-        <div class="container right">
-                <div class="content">
-                    <h2>ประเทศที่มีส่วนร่วมในสงครามครั้งนี้</h2>
-                    <p>สองฝ่ายคือ ฝ่ายอักษะ และ ฝ่ายพันธมิตร โดยประเทศเล็กๆ ส่วนใหญ่แล้ว ประเทศจะเข้าร่วมฝ่ายตาม ประเทศเพื่อนบ้านที่แข็งแกร่งเป็นส่วนใหญ่</p>
-                    <h2>ฝ่ายอักษะ</h2>
-                    <p>
-                        ฝ่ายที่ก่อสงคราม ฝ่ายอักษะประกอบไปด้วยแกนนำหลัก คือ เยอรมนี อิตาลี และ ญี่ปุ่น ในนามของกลุ่มอักษะโรม-เบอร์ลิน-โตเกียว 
-                        ที่มีการแถลงวัตถุประสงค์หลักในตอนต้นว่าเพื่อต่อต้านขบวนการคอมมิวนิสต์สากล<br>
-                        ประเทศแกนนำ อิตาลี นำโดย เบนิโต มุสโซลินี นาซีเยอรมนี นำโดย อดอล์ฟ ฮิตเลอร์ ญี่ปุ่น 
-                        นำโดย สมเด็จพระจักรพรรดิฮิโระฮิโตะ ประเทศอื่นที่สนับสนุน โรมาเนีย ฮังการี บัลแกเรีย ประเทศลิเบีย 
-                        ประเทศอื่นที่ให้ความร่วมมือ โครเอเชีย ฟินแลนด์ ไทย นำโดย จอมพล ป. พิบูลสงคราม อินเดีย
-                    </p>
-                </div>
-            </div>
-    </div>
 
-    
 
-<!-- Footer -->
-<div class="footer"><p>Copyright</p></div>
+      <script>
 
+      $("#toggle").click(function() {
+
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+
+      });
+
+
+      </script>
 
 </body>
-<script src="main.js"></script>
-<script src="jav.js"></script>
 </html>

@@ -1,153 +1,250 @@
-h1 {
-    color: black;
-    text-align: center;
-    font-style: italic;
-    font-size: 36px;
-}
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-head.styling{
-    background-color:rgb(22, 1, 1);
-    color:rgb(224, 238, 224);
-    font: bold 16px MS Sans Serif;
-    padding: 3px;
-    }
 * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(world.jpg) repeat 50% 50%;
+    background-size: cover;
+    display: table;
+}
+/*
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h1 {
+    color: rgba(15, 4, 4, 0.712);
+    font-family: "Poppins";
+    font-weight: 200;
+    font-size: 30px;
+    padding-bottom: 50px;
+} */
+
+nav {
+    width: 100%;
+    background: #000;
+    height: 70px;
+    position: static;
+    z-index: 1;
+}
+
+nav #brand {
+    float: left;
+    display: block;
+    margin-left: 84px;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bold;
+}
+
+nav #brand a {
+    color: #fff;
+    transition: all 0.3s ease-out;
+    font-family: "Poppins";
+    font-weight: 300;
+    animation: text 2s 1;
+}
+/*text animation*/
+@keyframes text {
+    0% {
+        color: #000;
+        margin-bottom: -80px;
+    }
+    2%{
+        letter-spacing: -1px;
+        margin-bottom: -10px;
+    }
+}
+/*เมนูบา*/
+nav #menu {
+    float: right;
+    /*left: 40%;*/
+    position: relative;
+}
+
+nav #menu li {
+    display: inline-block;
+    padding: 0px 30px;
+    cursor: pointer;
+    line-height: 70px;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+nav #menu li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-family: "Poppins";
+    font-weight: 200;
+    font-size: 16px;
+}
+/*้เวลาลากเม้าไปตรงเมนูบาร์ แล้วขึ้นลูกเล่น*/
+.menu a {
+    color: rgba(255, 255,255, 0.5);
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu * {
     box-sizing: border-box;
-  }
-  
-  /* Set a background color */
-  body {
-    background-color: #8e9ab4;
-    font-family: Helvetica, sans-serif;
-  }
-  p {
-      font-size: 2จpx;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
+    transition: all 0.35s ease;
+}
+.menu a:before, 
+.menu a:after {
+    height: 14px;
+    width: 14px;
     position: absolute;
-    width: 6px;
-    background-color: rgb(44, 9, 9);
+    content: '';
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+.menu a:before {
+    right: 0;
     top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid rgb(34, 17, 5);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
+    border-right: 3px solid whitesmoke;
+    border-top: 3px solid whitesmoke;
+    transform: translate(-100%, 50%);
+}
+.menu a:after {
     left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
+    bottom: 0;
+    border-left: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    transform: translate(-100%, 50%);
+}
+a:hover:before,
+a:hover:after {
+    transform: translate(-10%, -10%);
+    opacity: 1;
+}
+/*ย่อแทบแล้วเอาเม้าไปที่เมนูบาร์*/
+.cool-link::after {
+    content: '';
+    display: block;
     width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .2s;
+    margin-left: 5px;
+}
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+#toggle {
     position: absolute;
-    top: 22px;
-    width: 0;
+    right: 20px;
+    top: 14px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle .span {
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease-out;
+    backface-visibility: hidden;
+    margin: 5px auto;
+}
+
+#toggle.on #one {
+    transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+
+#toggle.on #two {
+    opacity: 0;
+}
+
+#toggle.on #three {
+    transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+
+#resize {
     z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-    .timeline::after {
-      left: 31px;
+    top: 0px;
+    position: absolute;
+    background: rgb(7, 0, 0);
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-out;
+    display: table;
+}
+
+#resize #menu {
+    height: 90px;
+    display: table-cell;
+    vertical-align: center;
+}
+
+#resize #menu li {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+    min-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+    margin-top:140px;
+}
+
+#resize #menu li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+#resize.active {
+    visibility: visible;
+    opacity: 0.99;
+}
+
+
+@media(max-width: 768px) {
+    #toggle {
+          visibility: visible;
+          opacity: 1;
+          margin-top: 6px;
     }
-  
-  /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
+
+    nav #brand {
+          margin-left: 18px;
     }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
+
+    #menu a {
+          font-family: "Poppins";
+          font-weight: 200;
+          font-size: 20px;
     }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
+
+    nav #menu {
+          display: none;
     }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
+}
+
+@media(min-width: 768px) {
+    #resize {
+          visibility: hidden !important;
     }
-  }
-  
+}
