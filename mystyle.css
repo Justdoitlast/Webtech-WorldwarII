@@ -6,11 +6,8 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background: url(world.jpg) repeat 50% 50%;
-    background-size: cover;
-    display: table;
+    margin: 0;
+    padding: 0;
 }
 /*
 .content {
@@ -86,6 +83,28 @@ nav #menu li a {
     font-family: "Poppins";
     font-weight: 200;
     font-size: 16px;
+}
+section.sec1 {
+    width: 100%;
+    height: 100vh;
+    background: url(world.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    margin-top: 30px;
+}
+.content h1 {
+    text-align: center;
+    font-family: "Poppins";
+}
+.content p {
+    width: 900px;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Poppins";
 }
 /*้เวลาลากเม้าไปตรงเมนูบาร์ แล้วขึ้นลูกเล่น*/
 .menu a {
