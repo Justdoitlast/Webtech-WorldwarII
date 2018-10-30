@@ -1,89 +1,222 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+      box-sizing: border-box;
 }
-
+ 
+html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+}
+ 
 body {
-    margin: 0;
-    padding: 0;
+      margin: 0;
+      padding: 0;
 }
-
-/*
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.content h1 {
-    color: rgba(15, 4, 4, 0.712);
-    font-family: "Poppins";
-    font-weight: 200;
-    font-size: 30px;
-    padding-bottom: 50px;
-} */
-
+ 
 nav {
-    width: 100%;
-    background: #000;
-    height: 70px;
-    position: static;
-    z-index: 1;
+      padding: 8px;
+      width: 100%;
+      background: white;
+      height: 65px;
+      position: fixed;
+      z-index: 1;
 }
+ 
+.logo {
+      float: left;
+      padding: 8px;
+      margin-left: 16px;
+      margin-top: 8px;
+}
+ 
+.logo a {
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 30px;
+      font-family: 'Chakra Petch', sans-serif;
+      letter-spacing: 0px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      margin-left: 20px;
+}
+ 
+nav ul {
+      float: right;
+}
+ 
+nav ul li {
+      display: inline-block;
+      float: left;
+}
+ 
+nav ul li:not(:first-child) {
+      margin-left: 48px;
+}
+ 
+nav ul li:last-child {
+      margin-right: 24px;
+}
+ 
+nav ul li a {
+      display: inline-block;
+      outline: none;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Chakra Petch', sans-serif;
+      letter-spacing: 1.2px;
+      font-weight: 600;
 
-nav #brand {
-    float: left;
+}
+.cool-link::after {
+    content: '';
     display: block;
-    margin-left: 84px;
-    font-size: 30px;
-    line-height: 70px;
-    font-weight: bold;
+    width: 0;
+    height: 2px;
+    background: rgb(19, 6, 6);
+    transition: width .2s;
+    margin-right: 12px;
 }
-
-nav #brand a {
-    color: #fff;
-    transition: all 0.3s ease-out;
-    font-family: "Poppins";
-    font-weight: 300;
-    animation: text 2s 1;
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .2s;
 }
-/*text animation*/
-@keyframes text {
-    0% {
-        color: #000;
-        margin-bottom: -80px;
-    }
-    2%{
-        letter-spacing: -1px;
-        margin-bottom: -10px;
-    }
+ 
+@media screen and (max-width: 864px) {
+      .logo {
+            padding: 0;
+            margin-bottom: 20px;
+      }
+ 
+      .nav-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: #fff;
+            opacity: 0;
+            transition: all 0.2s ease;
+      }
+ 
+      .nav-wrapper ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+      }
+ 
+      .nav-wrapper ul li {
+            display: block;
+            float: none;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 10px;
+      }
+ 
+      .nav-wrapper ul li:nth-child(1) a {
+            transition-delay: 0.2s;
+      }
+ 
+      .nav-wrapper ul li:nth-child(2) a {
+            transition-delay: 0.3s;
+      }
+ 
+      .nav-wrapper ul li:nth-child(3) a {
+            transition-delay: 0.4s;
+      }
+ 
+      .nav-wrapper ul li:nth-child(4) a {
+            transition-delay: 0.5s;
+      }
+ 
+      .nav-wrapper ul li:not(:first-child) {
+            margin-left: 0;
+      }
+ 
+      .nav-wrapper ul li a {
+            padding: 10px 24px;
+            opacity: 0;
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            transform: translateX(-20px);
+            transition: all 0.2s ease;
+      }
+ 
+      .nav-btn {
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            display: block;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            z-index: 9999;
+            border-radius: 50%;
+      }
+ 
+      .nav-btn i {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #000;
+            border-radius: 2px;
+            margin-left: 14px;
+      }
+ 
+      .nav-btn i:nth-child(1) {
+            margin-top: 16px;
+      }
+ 
+      .nav-btn i:nth-child(2) {
+            margin-top: 4px;
+            opacity: 1;
+      }
+ 
+      .nav-btn i:nth-child(3) {
+            margin-top: 4px;
+      }
 }
-/*เมนูบา*/
-nav #menu {
-    float: right;
-    /*left: 40%;*/
-    position: relative;
+ 
+#nav:checked + .nav-btn {
+      transform: rotate(45deg);
 }
-
-nav #menu li {
-    display: inline-block;
-    padding: 0px 30px;
-    cursor: pointer;
-    line-height: 70px;
-    position: relative;
-    transition: all 0.3s ease-out;
+ 
+#nav:checked + .nav-btn i {
+      background: #000;
+      transition: transform 0.2s ease;
 }
-
-nav #menu li a {
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    font-family: "Poppins";
-    font-weight: 200;
-    font-size: 16px;
+ 
+#nav:checked + .nav-btn i:nth-child(1) {
+      transform: translateY(6px) rotate(180deg);
+}
+ 
+#nav:checked + .nav-btn i:nth-child(2) {
+      opacity: 0;
+}
+ 
+#nav:checked + .nav-btn i:nth-child(3) {
+      transform: translateY(-6px) rotate(90deg);
+}
+ 
+#nav:checked ~ .nav-wrapper {
+      z-index: 9990;
+      opacity: 1;
+}
+ 
+#nav:checked ~ .nav-wrapper ul li a {
+      opacity: 1;
+      transform: translateX(0);
+}
+ 
+.hidden {
+      display: none;
 }
 section.sec1 {
     width: 100%;
@@ -93,21 +226,6 @@ section.sec1 {
     background-position: center;
     padding-top: 20px;
 }
-/*.content {
-    margin-top: 30px;
-}
-.content h1 {
-    text-align: center;
-    font-family: "Poppins";
-}
-.content p {
-    width: 900px;
-    margin: 30px auto;
-    text-align: justify;
-    font-size: 20px;
-    line-height: 30px;
-    font-family: "Poppins";
-}*/
 section.sec2 {
     width: 100%;
     height: 100vh;
@@ -115,303 +233,3 @@ section.sec2 {
     background-size: cover;
     background-position: center;
 }
-/*้เวลาลากเม้าไปตรงเมนูบาร์ แล้วขึ้นลูกเล่น*/
-.menu a {
-    color: rgba(255, 255,255, 0.5);
-    text-decoration: none;
-    font-size: 16px;
-}
-.menu * {
-    box-sizing: border-box;
-    transition: all 0.35s ease;
-}
-.menu a:before, 
-.menu a:after {
-    height: 14px;
-    width: 14px;
-    position: absolute;
-    content: '';
-    transition: all 0.35s ease;
-    opacity: 0;
-}
-.menu a:before {
-    right: 0;
-    top: 0;
-    border-right: 3px solid whitesmoke;
-    border-top: 3px solid whitesmoke;
-    transform: translate(-100%, 50%);
-}
-.menu a:after {
-    left: 0;
-    bottom: 0;
-    border-left: 3px solid whitesmoke;
-    border-bottom: 3px solid whitesmoke;
-    transform: translate(-100%, 50%);
-}
-a:hover:before,
-a:hover:after {
-    transform: translate(-10%, -10%);
-    opacity: 1;
-}
-/*ย่อแทบแล้วเอาเม้าไปที่เมนูบาร์*/
-.cool-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: width .2s;
-    margin-left: 5px;
-}
-.cool-link:hover::after {
-    width: 100%;
-    transition: width .3s;
-}
-
-
-#toggle {
-    position: absolute;
-    right: 20px;
-    top: 14px;
-    z-index: 999;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    float: right;
-    transition: all 0.3s ease-out;
-    visibility: hidden;
-    opacity: 0;
-}
-
-#toggle .span {
-    height: 3px;
-    background: #fff;
-    transition: all 0.3s ease-out;
-    backface-visibility: hidden;
-    margin: 5px auto;
-}
-
-#toggle.on #one {
-    transform: rotate(45deg) translateX(2px) translateY(4px);
-}
-
-#toggle.on #two {
-    opacity: 0;
-}
-
-#toggle.on #three {
-    transform: rotate(-45deg) translateX(8px) translateY(-10px);
-}
-
-#resize {
-    z-index: 1;
-    top: 0px;
-    position: absolute;
-    background: rgb(7, 0, 0);
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 1s ease-out;
-    display: table;
-}
-
-#resize #menu {
-    height: 90px;
-    display: table-cell;
-    vertical-align: center;
-}
-
-#resize #menu li {
-    display: block;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 50px;
-    min-height: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-
-#resize li:nth-child(1) {
-    margin-top:140px;
-}
-
-#resize #menu li a {
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-}
-
-#resize.active {
-    visibility: visible;
-    opacity: 0.99;
-}
-
-
-@media(max-width: 768px) {
-    #toggle {
-          visibility: visible;
-          opacity: 1;
-          margin-top: 6px;
-    }
-
-    nav #brand {
-          margin-left: 18px;
-    }
-
-    #menu a {
-          font-family: "Poppins";
-          font-weight: 200;
-          font-size: 20px;
-    }
-
-    nav #menu {
-          display: none;
-    }
-}
-
-@media(min-width: 768px) {
-    #resize {
-          visibility: hidden !important;
-    }
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
-  }
-  
-  section#timeline {
-    width: 80%;
-    margin: 20px auto;
-    position: relative;
-  }
-  section#timeline:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: -2%;
-    margin: 0 0 0 -1px;
-    width: 2px;
-    height: 100%;
-    background: rgba(255,255,255,0.2);
-    border-style: solid;
-    border-color: #25303B;
-    border-width: 5px;
-    margin-left: -5px;
-    margin-top: 70px;
-  }
-  section#timeline article {
-    width: 100%;
-    margin: 0 0 20px 0;
-    position: relative;
-  }
-  section#timeline article:after {
-    content: '';
-    display: block;
-    clear: both;
-    
-  }
-  section#timeline article div.inner {
-    width: 40%;
-    float: left;
-    margin: 5px 0 0 0;
-    border-radius: 6px;
-  }
-  section#timeline article div.inner span.date {
-    display: block;
-    width: 60px;
-    height: 50px;
-    padding: 5px 0;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin: 0 0 0 -32px;
-    border-radius: 100%;
-    font-size: 12px;
-    font-weight: 900;
-    text-transform: uppercase;
-    background: #25303B;
-    color: rgba(255,255,255,0.5);
-    border: 2px solid rgba(255,255,255,0.2);
-    box-shadow: 0 0 0 7px #25303B;
-  }
-  section#timeline article div.inner span.date span {
-    display: block;
-    text-align: center;
-  }
-  section#timeline article div.inner span.date span.day {
-    font-size: 10px;
-  }
-  section#timeline article div.inner span.date span.month {
-    font-size: 18px;
-  }
-  section#timeline article div.inner span.date span.year {
-    font-size: 10px;
-  }
-  section#timeline article div.inner h2 {
-    padding: 15px;
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    border-radius: 6px 6px 0 0;
-    position: relative;
-  }
-  section#timeline article div.inner h2:after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: -5px;
-        width: 10px; 
-        height: 10px;
-    -webkit-transform: rotate(-45deg);
-  }
-  section#timeline article div.inner p {
-    padding: 15px;
-    margin: 0;
-    font-size: 14px;
-    background: #fff;
-    color: #656565;
-    border-radius: 0 0 6px 6px;
-  }
-  section#timeline article:nth-child(2n+2) div.inner {
-    float: right;
-  }
-  section#timeline article:nth-child(2n+2) div.inner h2:after {
-    left: -5px;
-  }
-  section#timeline article:nth-child(1) div.inner h2 {
-    background: #e74c3c;
-  }
-  section#timeline article:nth-child(1) div.inner h2:after {
-    background: #e74c3c;
-  }
-  section#timeline article:nth-child(2) div.inner h2 {
-    background: #2ecc71;
-  }
-  section#timeline article:nth-child(2) div.inner h2:after {
-    background: #2ecc71;
-  }
-  section#timeline article:nth-child(3) div.inner h2 {
-    background: #e67e22;
-  }
-  section#timeline article:nth-child(3) div.inner h2:after {
-    background: #e67e22;
-  }
-  section#timeline article:nth-child(4) div.inner h2 {
-    background: #1abc9c;
-  }
-  section#timeline article:nth-child(4) div.inner h2:after {
-    background: #1abc9c;
-  }
-  section#timeline article:nth-child(5) div.inner h2 {
-    background: #9b59b6;
-  }
-  section#timeline article:nth-child(5) div.inner h2:after {
-    background: #9b59b6;
-  }

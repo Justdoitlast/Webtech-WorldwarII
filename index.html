@@ -4,112 +4,32 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>webtect</title>
+      <title>สงครามโลกครั้งที่ 2</title>
       <link rel="stylesheet" href="mystyle.css">
-      <script src="main.js"></script>
-      <script src="jquery-3.3.1.min.js"></script>
-      <link href="font.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
 </head>
 <body>
-      <nav>
-            <span id="brand">
-                  <a href="index.html">สงครามโลกครั้งที่ 2</a>
-            </span>
-
-            <ul class = "menu" id="menu">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="#">FAQ</a></li>
-            </ul>
-
-            <div id="toggle">
-                  <div class="span" id="one"></div>
-                  <div class="span" id="two"></div>
-                  <div class="span" id="three"></div>
-            </div>
-      </nav>
-      <section class="sec1">
-                  <section id="timeline">
-                              <article>
-                                <div class="inner">
-                                  <span class="date">
-                                    <span class="day"></span>
-                                    <span class="month" style="padding-top:10px;">ประวัติ</span>
-                                    <span class="year"></span>
-                                  </span>
-                                  <h2>The Title</h2>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-                                </div>
-                              </article>
-                              <article>
-                                <div class="inner">
-                                  <span class="date">
-                                    <span class="day">26<sup>th</sup></span>
-                                    <span class="month">Jan</span>
-                                    <span class="year">2014</span>
-                                  </span>
-                                  <h2>The Title</h2>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-                                </div>
-                              </article>
-                              <article>
-                                <div class="inner">
-                                  <span class="date">
-                                    <span class="day">26<sup>th</sup></span>
-                                    <span class="month">Jan</span>
-                                    <span class="year">2014</span>
-                                  </span>
-                                  <h2>The Title</h2>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-                                </div>
-                              </article>
-                              <article>
-                                <div class="inner">
-                                  <span class="date">
-                                    <span class="day">26<sup>th</sup></span>
-                                    <span class="month">Jan</span>
-                                    <span class="year">2014</span>
-                                  </span>
-                                  <h2>The Title</h2>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-                                </div>
-                              </article>
-                              <article>
-                                <div class="inner">
-                                  <span class="date">
-                                    <span class="day">26<sup>th</sup></span>
-                                    <span class="month">Jan</span>
-                                    <span class="year">2014</span>
-                                  </span>
-                                  <h2>The Title</h2>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
-                                </div>
-                              </article>
-                            </section>
-      </section>
-      <section class="sec2"></section>
-      <div id="resize">
-            <ul id="menu">
-                  <li><a href="#" class="cool-link">Home</a></li>
-                  <li><a href="#" class="cool-link">About</a></li>
-                  <li><a href="#" class="cool-link">Contact</a></li>
-                  <li><a href="#" class="cool-link">FAQ</a></li>
-            </ul>
+      <div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                        <div class="logo">
+                                <a href="#">สงครามโลกครั้งที่ 2</a>
+                        </div>
+                        <div class="nav-wrapper">
+                                <ul>
+                                    <li><a href="#" class="cool-link">หน้าแรก</a></li>
+                                    <li><a href="#"class="cool-link">ติดต่อ</a></li>
+                                    <li><a href="#" class="cool-link">จุดประสงค์</a></li>
+                                </ul>
+                         </div>
+            </nav>
       </div>
-
-
-      <script>
-
-      $("#toggle").click(function() {
-
-      $(this).toggleClass('on');
-      $("#resize").toggleClass("active");
-
-      });
-
-
-      </script>
-
+      <section class="sec1"></section>
+        <section class="sec2"></section>
 </body>
 </html>
