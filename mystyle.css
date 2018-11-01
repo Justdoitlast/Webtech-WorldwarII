@@ -19,14 +19,13 @@ body {
 
 }
 
-
 section.sec1 {
     width: 100%;
     height: 100vh;
     background: url(world.jpg);
     background-size: cover;
     background-position: center;
-    padding-top: 20px;
+    padding-top: 70px;
 }
 
 
