@@ -31,7 +31,7 @@ h2 {
 	margin-bottom: 5px;
 }
 .content-left {
-    padding-left: 10%
+    padding-left: 10%;
 }
 .content-right {
     padding-right: 10%
@@ -42,7 +42,23 @@ h2 {
     color: rgb(241, 163, 163);
     float: right;
 }
-
+/*text-box กล่องข้อความ*/
+.content-right .text-box {
+    background: #fff;
+    z-index: 5;
+    border: 2px solid black
+}
+.content-left .text-box {
+    background: #fff;
+    z-index: 5;
+    border: 2px solid black
+}
+.content-left .text-box::before {
+    z-index: -1;
+}
+.content-right .text-box::before {
+    z-index: -1;
+}
 
 /* Timeline */
 /*===============*/
@@ -107,14 +123,13 @@ h2 {
 /*timeline content*/
 .timeline-container li > div {
 	width: 40%;
-    color: #fff;
+    color: rgb(19, 9, 9);
     padding: 15px 25px;
 	border-radius: 5px;
 }
 
 .timeline-container li:nth-child(odd) > div {
     float: left;
-
 }
 
 .timeline-container li:nth-child(even) > div {
@@ -166,7 +181,7 @@ h2 {
 }
 .timeline-container li:nth-child(even) div:before {
 	left: auto;
-	right: 40%;
+    right: 40%;
 }
 
 /* Remove the top part of main vertical line */
@@ -217,7 +232,7 @@ h2 {
 	
 	.timeline-container li {
 		margin: 0;
-        padding: 35px 0;
+        padding: 30px 0;
         padding-right: 21px
 	}
 	
