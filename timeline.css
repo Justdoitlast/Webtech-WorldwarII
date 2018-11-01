@@ -30,11 +30,17 @@ h2 {
 	font-weight: 400;
 	margin-bottom: 5px;
 }
+.content-left {
+    padding-left: 10%
+}
+.content-right {
+    padding-right: 10%
+}
 /*textunline*/
 .textunline a {
     text-decoration: none;
     color: rgb(241, 163, 163);
-    text-align: right;
+    float: right;
 }
 
 
