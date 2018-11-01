@@ -56,7 +56,6 @@ nav ul li a {
     font-weight: 600;
 
 }
-/*เส้นต้ menubar */
 .cool-link::after {
   content: '';
   display: block;
