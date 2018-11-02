@@ -27,7 +27,7 @@ h2 {
 body {
     min-width: 500px;
     min-height: 600px;
-    background: url(war.jpg);
+    background: url(images/war.jpg);
     font-family: Arial;
     padding: 0px;
 
@@ -48,13 +48,13 @@ body {
 /* Footer */
 .footer {
     left: 0;
-    bottom: 0;
     width: 100%;
     background-color: black;
     color: white;
     text-align: center;
     padding: 15px;
-    position: fixed;
+    position: absolute;
+
  }
 
 
