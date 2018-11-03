@@ -50,3 +50,8 @@ section.sec3 {
    bottom:0;
    width:100%;
 }
+
+#pics {
+  width: 260px;
+  height: 260px;
+}
