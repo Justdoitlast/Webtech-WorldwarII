@@ -1,10 +1,10 @@
 
 // Create an object that contains options in the first list as the key, then put the array list of what will be displayed in the second list.
 const departmentEmployeeMap = {
-  1939: ["โปรดเลือก...", "กันยายน", "ตุลาคม","พฤษจิกายน","ธันวาคม"],
+  1939: ["โปรดเลือก...", "กันยายน", "ตุลาคม","พฤศจิกายน","ธันวาคม"],
   1940: ["โปรดเลือก...", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"],
   1941: ["โปรดเลือก...", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"],
-  1942: ["โปรดเลือก...", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"],
+  1942: ["โปรดเลือก...", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน"],
   1943: ["โปรดเลือก...", "มกราคม", "กุมภาพันธ์", "มีนาคม"],
   1944: ["โปรดเลือก...", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ธันวาคม"],
   1945: ["โปรดเลือก...", "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน"]
@@ -45,7 +45,7 @@ function myFunction() {
       if (y=="ตุลาคม") {
         location.href = "page1-october.html";
       }
-      if (y=="พฤษจิกายน") {
+      if (y=="พฤศจิกายน") {
         location.href = "page1-november.html";
       }
       if (y=="ธันวาคม") {
@@ -57,13 +57,13 @@ function myFunction() {
         location.href = "page2-january.html";
       }
       if (y=="กุมภาพันธ์") {
-        location.href = "page2-fabruary.html";
+        location.href = "page2-february.html";
       }
       if (y=="มีนาคม") {
         location.href = "page2-march.html";
       }
       if (y=="เมษายน") {
-        location.href = "page2.april";
+        location.href = "page2-april.html";
       }
       if (y=="พฤษภาคม") {
         location.href = "page2-may.html";
@@ -83,7 +83,7 @@ function myFunction() {
       if (y=="ตุลาคม") {
         location.href = "page2-october.html";
       }
-      if (y=="พฤษจิกายน") {
+      if (y=="พฤศจิกายน") {
         location.href = "page2-november.html";
       }
       if (y=="ธันวาคม") {
@@ -95,13 +95,13 @@ function myFunction() {
         location.href = "page3-january.html";
       }
       if (y=="กุมภาพันธ์") {
-        location.href = "page3-fabruary.html";
+        location.href = "page3-february.html";
       }
       if (y=="มีนาคม") {
         location.href = "page3-march.html";
       }
       if (y=="เมษายน") {
-        location.href = "page3.april";
+        location.href = "page3-april.html";
       }
       if (y=="พฤษภาคม") {
         location.href = "page3-may.html";
@@ -121,7 +121,7 @@ function myFunction() {
       if (y=="ตุลาคม") {
         location.href = "page3-october.html";
       }
-      if (y=="พฤษจิกายน") {
+      if (y=="พฤศจิกายน") {
         location.href = "page3-november.html";
       }
       if (y=="ธันวาคม") {
@@ -133,13 +133,13 @@ function myFunction() {
         location.href = "page4-january.html";
       }
       if (y=="กุมภาพันธ์") {
-        location.href = "page4-fabruary.html";
+        location.href = "page4-february.html";
       }
       if (y=="มีนาคม") {
         location.href = "page4-march.html";
       }
       if (y=="เมษายน") {
-        location.href = "page4.april";
+        location.href = "page4-april.html";
       }
       if (y=="พฤษภาคม") {
         location.href = "page4-may.html";
@@ -159,11 +159,8 @@ function myFunction() {
       if (y=="ตุลาคม") {
         location.href = "page4-october.html";
       }
-      if (y=="พฤษจิกายน") {
+      if (y=="พฤศจิกายน") {
         location.href = "page4-november.html";
-      }
-      if (y=="ธันวาคม") {
-        location.href = "page4-december.html";
       }
     }
     if (x == "1943") {
@@ -171,7 +168,7 @@ function myFunction() {
         location.href = "page5-january.html";
       }
       if (y=="กุมภาพันธ์") {
-        location.href = "page5-fabruary.html";
+        location.href = "page5-february.html";
       }
       if (y=="มีนาคม") {
         location.href = "page5-march.html";
@@ -182,13 +179,13 @@ function myFunction() {
         location.href = "page6-january.html";
       }
       if (y=="กุมภาพันธ์") {
-        location.href = "page6-fabruary.html";
+        location.href = "page6-february.html";
       }
       if (y=="มีนาคม") {
         location.href = "page6-march.html";
       }
       if (y=="เมษายน") {
-        location.href = "page6.april";
+        location.href = "page6-april.html";
       }
       if (y=="พฤษภาคม") {
         location.href = "page6-may.html";
@@ -214,13 +211,13 @@ function myFunction() {
         location.href = "page7-january.html";
       }
       if (y=="กุมภาพันธ์") {
-        location.href = "page7-fabruary.html";
+        location.href = "page7-february.html";
       }
       if (y=="มีนาคม") {
         location.href = "page7-march.html";
       }
       if (y=="เมษายน") {
-        location.href = "page7.april";
+        location.href = "page7-april.html";
       }
       if (y=="พฤษภาคม") {
         location.href = "page7-may.html";
