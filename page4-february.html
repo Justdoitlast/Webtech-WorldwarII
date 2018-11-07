@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="timeline.css">
     <link rel="stylesheet" href="menubar.css">
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/bomb.png" type="image/x-icon">
     <link rel="icon" href="images/bomb.png" type="image/x-icon">
 
@@ -22,157 +24,160 @@
 <!-- Navbarr -->
 <div class="contain">
         <nav>
-              <input type="checkbox" id="nav" class="hidden">
-              <label for="nav" class="nav-btn">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-              </label>
-                    <div class="logo">
-                            <a href="index.html">สงครามโลกครั้งที่ 2</a>
-                    </div>
-                    <div class="nav-wrapper">
-                            <ul>
-                                <li><a href="index.html" class="cool-link">หน้าแรก</a></li>
-                                <li><a href="contact.html" class="cool-link">ติดต่อ</a></li>
-                                <li><a href="#" class="cool-link">จุดประสงค์</a></li>
-                            </ul>
-                     </div>
+              <div class="logo">
+                    <a href="index.html">สงครามโลกครั้งที่ 2</a>
+              </div>
+              <div class="nav-wrapper">
+                    <ul>
+                          <li><a href="index.html" class="cool-link">หน้าแรก</a></li>
+                          <li><a href="contact.html"class="cool-link">ติดต่อ</a></li>
+                          <li><a href="#" class="cool-link">จุดประสงค์</a></li>
+                          <i class="fas fa-bars">
+                                <div class="show-wrapper">
+                                      <ul>
+                                            <li class="show"><a href="index.html" class="cool-link">หน้าแรก</a></li>
+                                            <li class="show"><a href="contact.html"class="cool-link">ติดต่อ</a></li>
+                                            <li class="show"><a href="#" class="cool-link">จุดประสงค์</a></li>
+                                      </ul>
+                                </div>
+                          </i>
+                    </ul>
+              </div>
         </nav>
   </div>
  <!-- header -->
-<div class="header" style="padding-top:  60px;">
-</div>
-
- <!-- TimeLine -->
-<!-- <hr class="new1" style="padding:3px"> -->
-<hr>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-<h1 style="color:aliceblue">ปีคริสตศักราช 1942</h1>
-    <div class="timeline">
-        <div class="container">
-            <div>
-                <div class="row">
-  <div class="col-lg-10 offset-lg-1">
-    <div class="card">
-        
-              <div class="card-body">
-                <br>
-                <center>
-        <label class="control-label" style="font-size: 19px"><u>ปีที่ต้องการ</u></label>
-            <select id="departmentList" class="select">
-                <option value="empty" selected="selected">โปรดเลือก...</option>
-                <option value="1939">1939</option>
-                <option value="1940">1940</option>
-                <option value="1941">1941</option>
-                <option value="1942">1942</option>
-                <option value="1943">1943</option>
-                <option value="1944">1944</option>
-                <option value="1945">1945</option>
+ <div class="header" style="padding-top:  60px;">
+    </div>
+    
+     <!-- TimeLine -->
+    <!-- <hr class="new1" style="padding:3px"> -->
+    <hr>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    <h1 style="color:aliceblue">ปีคริสตศักราช 1942</h1>
+        <div class="timeline">
+            <div class="container">
+                <div>
+                    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="card">
+            
+                  <div class="card-body">
+                    <br>
+                    <center>
+            <label class="control-label" style="font-size: 19px"><u>ปีที่ต้องการ</u></label>
+                <select id="departmentList" class="select">
+                    <option value="empty" selected="selected">โปรดเลือก...</option>
+                    <option value="1939">1939</option>
+                    <option value="1940">1940</option>
+                    <option value="1941">1941</option>
+                    <option value="1942">1942</option>
+                    <option value="1943">1943</option>
+                    <option value="1944">1944</option>
+                    <option value="1945">1945</option>
+                </select>
+            <label id="valid1"></label>
+            <label class="control-label" ><u>เดือนที่ต้องการ</u></label>
+            <select id="employeeList" class="select">
+                <option selected="selected">โปรดเลือก...</option>
             </select>
-        <label id="valid1"></label>
-        <label class="control-label" ><u>เดือนที่ต้องการ</u></label>
-        <select id="employeeList" class="select">
-            <option selected="selected">โปรดเลือก...</option>
-        </select>
-        <label id="valid2"></label>
-        <button onclick="myFunction()" type="button" class="btn"  id="btnSubmit" style="padding: 12px 24px;">ค้นหา</button>
+            <label id="valid2"></label>
+            <button onclick="myFunction()" type="button" class="btn"  id="btnSubmit" style="padding: 12px 24px;">ค้นหา</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-            </div></center>
-            <hr>
-                <h2>เดือนกุมภาพันธ์ 1942 </h2>
-            <div class="content">
-                <h3>วันที่ 1 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                <p>&emsp;กองทัพเยอรมันภายใต้การบัญชาการของนายพลรอมเมลยึดเมืองเอล กาซาลาที่ชายแดนลิเบีย</p>
-            </div>
-            <div class="content">
-                <h3>วันที่ 2 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                <p>&emsp;นายพลโจเซฟ สติลเวล ได้เป็นหัวหน้าที่ปรึกษาของเจียง ไคเช็ค ผู้บัญชาการสูงสุดของกองทัพสัมพันธมิตรในประเทศจีน</p>
-            </div>
-            <div class="content">
-                <h3>วันที่ 3 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                <p>&emsp;กองทัพอากาศญี่ปุ่นมุ่งไปโจมตีเกาะชวา</p>
-            </div>
-            <div class="content">
-                <h3>วันที่ 8 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                <p>&emsp;กองทัพเยอรมันในสหภาพโซเวียตถูกขับออกจากเคิร์สค์ ซึ่งเป็นจุดยุทธศาสตร์สำคัญในแผนการของเยอรมนี</p>
-            </div>
-
+                </div></center>
+                <hr>
+                    <h2>เดือนกุมภาพันธ์ 1942 </h2>
                 <div class="content">
-                        <h3>วันที่ 9 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                    <p>&emsp;ทัพอังกฤษเสริมกำลังพลไปยังสิงคโปร์เพื่อเตรียมการต่อสู้ครั้งสุดท้าย</p>
-                    <p>&emsp;ผู้นำทางทหารของสหรัฐอเมริกาประชุมอย่างเป็นทางการครั้งแรกเกี่ยวกับยุทธศาสตร์ของกองทัพสหรัฐอเมริกา</p>
-                </div>
-
-                <div class="content">
-                        <h3>วันที่ 11 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                    <p>&emsp;"การตีฝ่าช่องแคบ" เรือประจัญบานเยอรมัน ชาร์นฮอร์ชตและไกเซเนา พร้อมด้วยเรือลาดตระเวนหนัก พรินซ์ ยูจีน 
-                        ได้แล่นออกจากแบร็สต์ผ่านช่องแคบอังกฤษเพื่อไปที่ท่าเรือตอนเหนือ รวมทั้ง Wilhelmshaven เยอรมนี หน่วยกองเรืออังกฤษได้ล้มเหลวในการจมเรือของพวกเขา</p>
-                    <p>-เรือบรรทุกอากาศยาน ยูเอสเอส ซาราโตกา ได้โจมตีทำลายเรือดำน้ำของญี่ปุ่นที่ชื่อว่า I-6 ด้วยระยะห่าง 480 ไมล์ ทางตะวันตกเฉียงใต้ของเพิร์ลฮาร์เบอร์</p>
-                </div>
-
-                <div class="content">
-                        <h3>วันที่ 15 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                    <p>&emsp;สิงคโปร์ยอมจำนนต่อญี่ปุ่น เป็นความสูญเสียครั้งใหญ่ของกองทัพอังกฤษ</p>
-                </div>
-
-                <div class="content">
-                        <h3>วันที่ 19 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                    <p>&emsp;แคนาดาประกาศเกณฑ์ทหาร</p>
-                    <p>&emsp;กองทัพอากาศญี่ปุ่นโจมตีดาร์วิน</p>
+                    <h3>วันที่ 1 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                    <p>&emsp;กองทัพเยอรมันภายใต้การบัญชาการของนายพลรอมเมลยึดเมืองเอล กาซาลาที่ชายแดนลิเบีย</p>
                 </div>
                 <div class="content">
-                        <h3>วันที่ 20 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                    <p>&emsp;กองทัพญี่ปุ่นข้ามแม่น้ำสาละวิน; ญี่ปุ่นรุกรานบาหลีและติมอร์</p>
+                    <h3>วันที่ 2 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                    <p>&emsp;นายพลโจเซฟ สติลเวล ได้เป็นหัวหน้าที่ปรึกษาของเจียง ไคเช็ค ผู้บัญชาการสูงสุดของกองทัพสัมพันธมิตรในประเทศจีน</p>
                 </div>
                 <div class="content">
-                        <h3>วันที่ 22 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                    <p>&emsp;ประธานาธิบดีโรสเวลต์ออกคำสั่งให้นายพลดักลาส แมกอาเธอร์ถอนตัวออกจากฟิลิปปินส์</p>
+                    <h3>วันที่ 3 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                    <p>&emsp;กองทัพอากาศญี่ปุ่นมุ่งไปโจมตีเกาะชวา</p>
                 </div>
                 <div class="content">
-                        <h3>วันที่ 23 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                    <p>&emsp;เรือดำน้ำญี่ปุ่นไอ-17 โจมตีแผ่นดินใหญ่สหรัฐอเมริกาได้เป็นครั้งแรก โดยถล่มโรงกลั่นน้ำมันในเอลวูด รัฐแคลิฟอร์เนีย</p>
+                    <h3>วันที่ 8 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                    <p>&emsp;กองทัพเยอรมันในสหภาพโซเวียตถูกขับออกจากเคิร์สค์ ซึ่งเป็นจุดยุทธศาสตร์สำคัญในแผนการของเยอรมนี</p>
                 </div>
-                <div class="content">
-                        <h3>วันที่ 25 กุมภาพันธ์ คริสตศักราช 1942</h3>
-                    <p>&emsp;การกักตัวพลเมืองชาวอเมริกัน-ญี่ปุ่นเริ่มต้นขึ้นในสหรัฐอเมริกาจากความวิตกที่เพิ่มมากขึ้น</p><hr>
-                </div>
-                    <div class="pagination">
-            <center>
-                <a class="pagination-newer" href="page4-january.html"><u>PREV</u></a>
-                <span class="pagination-inner">
-                    <a href="page4-january.html">มกราคม</a>
+    
+                    <div class="content">
+                            <h3>วันที่ 9 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                        <p>&emsp;ทัพอังกฤษเสริมกำลังพลไปยังสิงคโปร์เพื่อเตรียมการต่อสู้ครั้งสุดท้าย</p>
+                        <p>&emsp;ผู้นำทางทหารของสหรัฐอเมริกาประชุมอย่างเป็นทางการครั้งแรกเกี่ยวกับยุทธศาสตร์ของกองทัพสหรัฐอเมริกา</p>
+                    </div>
+    
+                    <div class="content">
+                            <h3>วันที่ 11 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                        <p>&emsp;"การตีฝ่าช่องแคบ" เรือประจัญบานเยอรมัน ชาร์นฮอร์ชตและไกเซเนา พร้อมด้วยเรือลาดตระเวนหนัก พรินซ์ ยูจีน 
+                            ได้แล่นออกจากแบร็สต์ผ่านช่องแคบอังกฤษเพื่อไปที่ท่าเรือตอนเหนือ รวมทั้ง Wilhelmshaven เยอรมนี หน่วยกองเรืออังกฤษได้ล้มเหลวในการจมเรือของพวกเขา</p>
+                        <p>-เรือบรรทุกอากาศยาน ยูเอสเอส ซาราโตกา ได้โจมตีทำลายเรือดำน้ำของญี่ปุ่นที่ชื่อว่า I-6 ด้วยระยะห่าง 480 ไมล์ ทางตะวันตกเฉียงใต้ของเพิร์ลฮาร์เบอร์</p>
+                    </div>
+    
+                    <div class="content">
+                            <h3>วันที่ 15 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                        <p>&emsp;สิงคโปร์ยอมจำนนต่อญี่ปุ่น เป็นความสูญเสียครั้งใหญ่ของกองทัพอังกฤษ</p>
+                    </div>
+    
+                    <div class="content">
+                            <h3>วันที่ 19 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                        <p>&emsp;แคนาดาประกาศเกณฑ์ทหาร</p>
+                        <p>&emsp;กองทัพอากาศญี่ปุ่นโจมตีดาร์วิน</p>
+                    </div>
+                    <div class="content">
+                            <h3>วันที่ 20 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                        <p>&emsp;กองทัพญี่ปุ่นข้ามแม่น้ำสาละวิน; ญี่ปุ่นรุกรานบาหลีและติมอร์</p>
+                    </div>
+                    <div class="content">
+                            <h3>วันที่ 22 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                        <p>&emsp;ประธานาธิบดีโรสเวลต์ออกคำสั่งให้นายพลดักลาส แมกอาเธอร์ถอนตัวออกจากฟิลิปปินส์</p>
+                    </div>
+                    <div class="content">
+                            <h3>วันที่ 23 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                        <p>&emsp;เรือดำน้ำญี่ปุ่นไอ-17 โจมตีแผ่นดินใหญ่สหรัฐอเมริกาได้เป็นครั้งแรก โดยถล่มโรงกลั่นน้ำมันในเอลวูด รัฐแคลิฟอร์เนีย</p>
+                    </div>
+                    <div class="content">
+                            <h3>วันที่ 25 กุมภาพันธ์ คริสตศักราช 1942</h3>
+                        <p>&emsp;การกักตัวพลเมืองชาวอเมริกัน-ญี่ปุ่นเริ่มต้นขึ้นในสหรัฐอเมริกาจากความวิตกที่เพิ่มมากขึ้น</p><hr>
+                    </div>
+                        <div class="pagination">
+                <center>
+                    <a class="pagination-newer" href="page4-january.html"><u>PREV</u></a>
+                    <span class="pagination-inner">
+                        <a href="page4-january.html">มกราคม</a>
+                        
+                        <a class="pagination-active" href="page4-february.html">กุมภาพันธ์</a>
+                        <a href="page4-march.html">มีนาคม</a>
+                        <a href="page4-april.html">เมษายน</a>
+                        <a href="page4-may.html">พฤษภาคม</a>
+                        <a href="page4-june.html">มิถุนายน</a>
+                        <a href="page4-july.html">กรกฎาคม</a><br>
+                        <a href="page4-august.html">สิงหาคม</a>
+                        <a href="page4-september.html">กันยายน</a>
+                        
+                        <a href="page4-october.html">ตุลาคม</a>
+                        <a href="page4-november.html">พฤศจิกายน</a>
+                        
+                        <a class="pagination-older" href="page4-march.html"><u>NEXT</u></a>
+                    </span>
                     
-                    <a class="pagination-active" href="page4-february.html">กุมภาพันธ์</a>
-                    <a href="page4-march.html">มีนาคม</a>
-                    <a href="page4-april.html">เมษายน</a>
-                    <a href="page4-may.html">พฤษภาคม</a>
-                    <a href="page4-june.html">มิถุนายน</a>
-                    <a href="page4-july.html">กรกฎาคม</a><br>
-                    <a href="page4-august.html">สิงหาคม</a>
-                    <a href="page4-september.html">กันยายน</a>
-                    
-                    <a href="page4-october.html">ตุลาคม</a>
-                    <a href="page4-november.html">พฤศจิกายน</a>
-                    
-                    <a class="pagination-older" href="page4-march.html"><u>NEXT</u></a>
-                </span>
-                
-                </center>
-        </div>
-                </div>
-
-<!-- Footer -->
-<div class="footer">
-        <p id="digitalclock" style="float: left; color:white; padding-right: 5px;" >
-            <p style="position:relative">Copyright</p></div>
-
-
-</body>
-<script src="main.js"></script>
-<script src="jav.js"></script>
-</html>
+                    </center>
+            </div>
+                    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+            <p id="digitalclock" style="float: left; color:white; padding-right: 5px;" >
+                <p style="position:relative">Copyright</p></div>
+    
+    
+    </body>
+    <script src="main.js"></script>
+    <script src="jav.js"></script>
+    </html>
