@@ -51,6 +51,15 @@ section.sec3 {
    width:100%;
 }
 
+#logos {
+  width: 70;
+  height: 70px;
+}
+
+#logos:hover {
+    transform: scale(1.2);
+}
+
 #pics {
   width: 260px;
   height: 260px;

@@ -1,3 +1,9 @@
+var spanElements = document.getElementsByTagName('h1');
+
+for (var i = 0; i < spanElements.length; i++) {
+    spanElements[i].style.color = 'orange';
+}
+
 
 // Create an object that contains options in the first list as the key, then put the array list of what will be displayed in the second list.
 const departmentEmployeeMap = {
