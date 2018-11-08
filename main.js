@@ -5,8 +5,12 @@ for (var i = 0; i < spanElements.length; i++) {
 }
 
 var list = document.getElementsByTagName("ul")[0];
-list.getElementsByTagName("a")[2].href = "purpose.html";
-list.getElementsByTagName("a")[5].href = "purpose.html";
+
+for (var i = 0; i < document.getElementsByTagName("a").length; i++) {
+  if (list.getElementsByTagName("a")[i].innerHTML == "จุดประสงค์") {
+    list.getElementsByTagName("a")[i].href = "purpose.html"
+  }
+}
 
 // Create an object that contains options in the first list as the key, then put the array list of what will be displayed in the second list.
 const departmentEmployeeMap = {
